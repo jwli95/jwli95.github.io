@@ -49,6 +49,8 @@ url: "https://jwli95.github.io/"
 #   - vendor/ruby/
 
 
+theme: "just-the-docs"
+
 plugins:
   - jekyll-seo-tag
 
