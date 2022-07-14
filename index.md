@@ -10,24 +10,28 @@ permalink: /
 
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
-
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/just-the-docs/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 ## Education
 
-Arizona State University
-Ph.D. in Computer Engineering
-Tempe, AZ
-01/2019- Now
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+| ------------ | ------------- |
+| **Arizona State University** <br /> Ph.D. in Computer Engineering | **Tempe, AZ** <br /> 01/2019- Now |
+| **Nanjing University of Posts and Telecommunications** <br /> B.E. in Telecommunication Engineering | **Nanjing, China** <br /> 09/2013-07/2017 |
 
-Nanjing University of Posts and Telecommunications
-B.E. in Telecommunication Engineering
-Nanjing, China
-09/2013-07/2017
+## Experience
+
+| ------------ | -- | ------------- |
+| **Arizona State University** <br /> Research Assistant, Advisor: Dr. Yanchao Zhang || **Tempe, AZ** <br /> 01/2019- Now |
+| **Arizona State University** <br /> Teaching Assistant, EEE455: Communication Systems || **Tempe, AZ** <br /> 22Spring |
+| **Arizona State University** <br /> Teaching Assistant, EEE120: Digital Design Fundamentals || **Tempe, AZ** <br /> 19Spring, 19Fall, 21Fall |
+| **Michigan State University** <br /> Research Assistant || **East Lansing, MI** <br /> 08/2017- 11/2018 |
 
 ## Publications
 
