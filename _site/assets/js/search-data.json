@@ -635,18 +635,6 @@
     "url": "http://localhost:4000/docs/usrp",
     "relUrl": "/docs/usrp"
   },"106": {
-    "doc": "USRP",
-    "title": "Utilities",
-    "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",
-    "url": "http://localhost:4000/docs/usrp#utilities",
-    "relUrl": "/docs/usrp#utilities"
-  },"107": {
-    "doc": "USRP",
-    "title": "USRP",
-    "content": " ",
-    "url": "http://localhost:4000/docs/usrp",
-    "relUrl": "/docs/usrp"
-  },"108": {
     "doc": "Utilities",
     "title": "Utilities",
     "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",
