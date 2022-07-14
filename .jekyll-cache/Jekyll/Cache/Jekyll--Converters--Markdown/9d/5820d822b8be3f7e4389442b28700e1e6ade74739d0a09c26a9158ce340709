@@ -1,0 +1,125 @@
+I"Ó<h1 id="usrp-x310-connectivity">USRP X310 Connectivity</h1>
+<hr />
+<h2 id="connect-to-host-via-gigabit-ethernet">Connect to host via Gigabit Ethernet</h2>
+<p>It is recommended to connect the USRP X310 directly with the host via Gigabit Ethernet interface.</p>
+
+<p><strong>STEP 1</strong>: Connect ethernet cable to the port 0 on X310. 1 Gigabit to SFP+ adapter and &gt;Cat5E cable are required.</p>
+
+<p><img src="../eth_1g.jpeg" alt="" /></p>
+
+<p><strong>STEP 2</strong>: Configure the network of host.</p>
+<ul>
+  <li>Check the connection X310 is using in Ubuntu network manager. Here, I use an USB Ethernet card, which is wired connection 4.</li>
+</ul>
+
+<p><img src="../network_connections.png" alt="" /></p>
+
+<ul>
+  <li>Go to the connection setup, IPV4 settings. Configure the host as following.</li>
+</ul>
+
+<p><img src="../connection_setup.png" alt="" /></p>
+
+<p><strong>STEP 3</strong>: Disable networking, then enable networking.</p>
+
+<p><strong>STEP 4</strong>: Check device connectivity using <code class="language-plaintext highlighter-rouge">uhd_find_devices</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jiawei@evga:~<span class="nv">$ </span>uhd_find_devices
+<span class="o">[</span>INFO] <span class="o">[</span>UHD] linux<span class="p">;</span> GNU C++ version 5.4.0 20160609<span class="p">;</span> Boost_105800<span class="p">;</span> UHD_3.14.0.HEAD-0-g6875d061
+<span class="nt">--------------------------------------------------</span>
+<span class="nt">--</span> UHD Device 0
+<span class="nt">--------------------------------------------------</span>
+Device Address:
+    serial: 31792BA
+    addr: 192.168.10.2
+    fpga: HG
+    name:
+    product: X310
+    <span class="nb">type</span>: x300
+</code></pre></div></div>
+
+<p>Run <code class="language-plaintext highlighter-rouge">uhd_usrp_probe --args addr=192.168.10.2</code> to make sure all components are correctly detected and usable.</p>
+
+<hr />
+<h2 id="ten-gigabit">Ten Gigabit</h2>
+
+<p><strong>STEP 1</strong>: Connect the SFP+ cable to <code class="language-plaintext highlighter-rouge">port 1</code>.</p>
+
+<p><strong>Step 2</strong>: Same as Gigabit Ethernet one. Except the host IP should be <code class="language-plaintext highlighter-rouge">192.168.40.1</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jiawei@evga:~<span class="nv">$ </span>uhd_find_devices
+<span class="o">[</span>INFO] <span class="o">[</span>UHD] linux<span class="p">;</span> GNU C++ version 5.4.0 20160609<span class="p">;</span> Boost_105800<span class="p">;</span> UHD_3.14.0.HEAD-0-g6875d061
+<span class="nt">--------------------------------------------------</span>
+<span class="nt">--</span> UHD Device 0
+<span class="nt">--------------------------------------------------</span>
+Device Address:
+    serial: 31792BA
+    addr: 192.168.40.2
+    fpga: HG
+    name:
+    product: X310
+    <span class="nb">type</span>: x300
+</code></pre></div></div>
+
+<hr />
+<h2 id="change-the-usrps-ip-address">Change the USRPâ€™s IP address</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /usr/local/lib/uhd/utils
+./usrp_burn_mb_eeprom <span class="nt">--args</span><span class="o">=</span><span class="s2">"addr=192.168.40.2,type=x300"</span> <span class="nt">--read-all</span>
+./usrp_burn_mb_eeprom <span class="nt">--args</span><span class="o">=</span><span class="s2">"addr=192.168.40.2,type=x300"</span> <span class="nt">--values</span><span class="o">=</span><span class="s2">"ip-addr0=192.168.10.3"</span>
+</code></pre></div></div>
+<p>In my case, the install path is <code class="language-plaintext highlighter-rouge">/usr/local/lib/uhd/utils</code></p>
+
+<h2 id="default-x310-network-parameters">Default X310 Network Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ethernet Interface</th>
+      <th>USRP Ethernet Port</th>
+      <th>Default USRP IP Address</th>
+      <th>Host Static IP Address</th>
+      <th>Host Static Subnet Mask</th>
+      <th>Address EEPROM key</th>
+      <th>Connection Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gigabit</td>
+      <td>Port 0 (HG Image)</td>
+      <td>192.168.10.2</td>
+      <td>192.168.10.1</td>
+      <td>255.255.255.0</td>
+      <td>ip-addr0</td>
+      <td>Single</td>
+    </tr>
+    <tr>
+      <td>Ten Gigabit</td>
+      <td>Port 0 (XG Image)</td>
+      <td>192.168.30.2</td>
+      <td>192.168.30.1</td>
+      <td>255.255.255.0</td>
+      <td>ip-addr2</td>
+      <td>Twin</td>
+    </tr>
+    <tr>
+      <td>Ten Gigabit</td>
+      <td>Port 1 (HG/XG Image)</td>
+      <td>192.168.40.2</td>
+      <td>192.168.40.1</td>
+      <td>255.255.255.0</td>
+      <td>ip-addr3</td>
+      <td>Single</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ifconfig enp3s0f0 mtu 9000
+<span class="nb">sudo </span>ifconfig enp3s0f1 mtu 9000
+<span class="nb">sudo </span>sysctl <span class="nt">-w</span> net.core.rmem_max<span class="o">=</span>24862979
+<span class="nb">sudo </span>sysctl <span class="nt">-w</span> net.core.wmem_max<span class="o">=</span>24862979
+<span class="k">for</span> <span class="o">((</span><span class="nv">i</span><span class="o">=</span>0<span class="p">;</span>i&lt;<span class="si">$(</span><span class="nb">nproc</span><span class="si">)</span><span class="p">;</span>i++<span class="o">))</span><span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>cpufreq-set <span class="nt">-c</span> <span class="nv">$i</span> <span class="nt">-r</span> <span class="nt">-g</span> performance<span class="p">;</span> <span class="k">done
+</span>cpufreq-info
+</code></pre></div></div>
+:ET

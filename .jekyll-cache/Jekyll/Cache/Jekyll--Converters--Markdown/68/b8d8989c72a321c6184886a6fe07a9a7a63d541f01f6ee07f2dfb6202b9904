@@ -1,0 +1,111 @@
+I"�/<h1 id="building-and-installing-the-usrp-open-source-toolchain-uhd-and-gnu-radio-on-linux"><a href="https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux">Building and Installing the USRP Open-Source Toolchain (UHD and GNU Radio) on Linux</a></h1>
+<h3 id="update-and-install-dependencies">Update and Install dependencies</h3>
+<p>Before building UHD and GNU Radio, you need to make sure that all the dependencies are first installed.
+However, before installing any dependencies, you should first make sure that all the packages that are already installed on your system are up-to-date. You can do this from a GUI, or from the command-line, as shown below.
+On Ubuntu systems, run:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+</code></pre></div></div>
+<p>On Ubuntu 18.04 systems, run:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nt">-y</span> <span class="nb">install </span>git swig cmake doxygen build-essential libboost-all-dev libtool libusb-1.0-0 libusb-1.0-0-dev libudev-dev libncurses5-dev libfftw3-bin libfftw3-dev libfftw3-doc libcppunit-1.14-0 libcppunit-dev libcppunit-doc ncurses-bin cpufrequtils python-numpy python-numpy-doc python-numpy-dbg python-scipy python-docutils qt4-bin-dbg qt4-default qt4-doc libqt4-dev libqt4-dev-bin python-qt4 python-qt4-dbg python-qt4-dev python-qt4-doc python-qt4-doc libqwt6abi1 libfftw3-bin libfftw3-dev libfftw3-doc ncurses-bin libncurses5 libncurses5-dev libncurses5-dbg libfontconfig1-dev libxrender-dev libpulse-dev swig g++ automake autoconf libtool python-dev libfftw3-dev libcppunit-dev libboost-all-dev libusb-dev libusb-1.0-0-dev fort77 libsdl1.2-dev python-wxgtk3.0 git libqt4-dev python-numpy ccache python-opengl libgsl-dev python-cheetah python-mako python-lxml doxygen qt4-default qt4-dev-tools libusb-1.0-0-dev libqwtplot3d-qt5-dev pyqt4-dev-tools python-qwt5-qt4 cmake git wget libxi-dev gtk2-engines-pixbuf r-base-dev python-tk liborc-0.4-0 liborc-0.4-dev libasound2-dev python-gtk2 libzmq3-dev libzmq5 python-requests python-sphinx libcomedi-dev python-zmq libqwt-dev libqwt6abi1 python-six libgps-dev libgps23 gpsd gpsd-clients python-gps python-setuptools
+</code></pre></div></div>
+<p>On Ubuntu 16.04 systems, run:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nt">-y</span> <span class="nb">install </span>git swig cmake doxygen build-essential libboost-all-dev libtool libusb-1.0-0 libusb-1.0-0-dev libudev-dev libncurses5-dev libfftw3-bin libfftw3-dev libfftw3-doc libcppunit-1.13-0v5 libcppunit-dev libcppunit-doc ncurses-bin cpufrequtils python-numpy python-numpy-doc python-numpy-dbg python-scipy python-docutils qt4-bin-dbg qt4-default qt4-doc libqt4-dev libqt4-dev-bin python-qt4 python-qt4-dbg python-qt4-dev python-qt4-doc python-qt4-doc libqwt6abi1 libfftw3-bin libfftw3-dev libfftw3-doc ncurses-bin libncurses5 libncurses5-dev libncurses5-dbg libfontconfig1-dev libxrender-dev libpulse-dev swig g++ automake autoconf libtool python-dev libfftw3-dev libcppunit-dev libboost-all-dev libusb-dev libusb-1.0-0-dev fort77 libsdl1.2-dev python-wxgtk3.0 git-core libqt4-dev python-numpy ccache python-opengl libgsl-dev python-cheetah python-mako python-lxml doxygen qt4-default qt4-dev-tools libusb-1.0-0-dev libqwt5-qt4-dev libqwtplot3d-qt4-dev pyqt4-dev-tools python-qwt5-qt4 cmake git-core wget libxi-dev gtk2-engines-pixbuf r-base-dev python-tk liborc-0.4-0 liborc-0.4-dev libasound2-dev python-gtk2 libzmq-dev libzmq1 python-requests python-sphinx libcomedi-dev python-zmq python-setuptools
+</code></pre></div></div>
+
+<h3 id="building-and-installing-uhd-from-source-code">Building and installing UHD from source code</h3>
+<p>First, make a folder to hold the repository.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> <span class="nv">$HOME</span>
+<span class="nb">mkdir </span>workarea
+<span class="nb">cd </span>workarea
+</code></pre></div></div>
+<p>Next, clone the repository and change into the cloned directory.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/EttusResearch/uhd
+<span class="nb">cd </span>uhd
+</code></pre></div></div>
+<p>Next, checkout the desired UHD version. You can get a full listing of tagged releases by running the command:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag <span class="nt">-l</span>
+</code></pre></div></div>
+<p>Example truncated output of <code class="language-plaintext highlighter-rouge">git tag -l</code>:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git tag <span class="nt">-l</span>
+...
+release_003_009_004
+release_003_009_005
+release_003_010_000_000
+</code></pre></div></div>
+<p>After identifying the version and corresponding release tag you need, check it out:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout v3.14.0.0
+</code></pre></div></div>
+<p>Next, create a build folder within the repository, invoke CMake and build UHD.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>host
+<span class="nb">mkdir </span>build
+<span class="nb">cd </span>build
+cmake ../
+make <span class="nt">-j</span> 12
+</code></pre></div></div>
+<p>Next, you can optionally run some basic tests to verify that the build process completed properly.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make <span class="nb">test</span> <span class="nt">-j</span> 12
+</code></pre></div></div>
+<p>Next, install UHD, using the default install prefix, which will install UHD under the /usr/local/lib folder. You need to run this as root due to the permissions on that folder.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+<p>Next, update the system’s shared library cache.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ldconfig
+</code></pre></div></div>
+<p>Finally, make sure that the <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code> environment variable is defined and includes the folder under which UHD was installed. Most commonly, you can add the line below to the end of your <code class="language-plaintext highlighter-rouge">$HOME/.bashrc</code> file:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/lib
+</code></pre></div></div>
+<h3 id="downloading-the-uhd-fpga-images">Downloading the UHD FPGA Images</h3>
+<p>You can now download the UHD FPGA Images for this installation. This can be done by running the command <code class="language-plaintext highlighter-rouge">uhd_images_downloader</code>.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>uhd_images_downloader
+</code></pre></div></div>
+<h3 id="updating-the-fpga">Updating the FPGA</h3>
+<p>Power on the USRP and run</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uhd_image_loader <span class="nt">--args</span><span class="o">=</span><span class="s2">"type=x300,addr=192.168.10.2,fpga=HG"</span>
+</code></pre></div></div>
+<h3 id="building-and-installing-gnu-radio-from-source-code">Building and installing GNU Radio from source code</h3>
+<p>First, make a folder to hold the repository.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> <span class="nv">$HOME</span>
+<span class="nb">cd </span>workarea
+</code></pre></div></div>
+<p>Next, clone the repository.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="nt">--recursive</span> https://github.com/gnuradio/gnuradio
+</code></pre></div></div>
+<p>Next, go into the repository and check out the desired GNU Radio version.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>gnuradio
+</code></pre></div></div>
+<p>To checkout the <code class="language-plaintext highlighter-rouge">v3.7.13.4</code> branch:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout v3.7.13.4
+</code></pre></div></div>
+<p>Next, update the submodules:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule update <span class="nt">--init</span> <span class="nt">--recursive</span>
+</code></pre></div></div>
+<p>Next, create a build folder within the repository, invoke CMake, and build GNU Radio:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>build
+<span class="nb">cd </span>build
+cmake ../
+make <span class="nt">-j</span> 12
+</code></pre></div></div>
+<p>Next, you can optionally run some basic tests to verify that the build process completed properly.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make <span class="nb">test</span> <span class="nt">-j</span> 12
+</code></pre></div></div>
+<p>Next, install GNU Radio, using the default install prefix, which will install GNU Radio under the /usr/local/lib folder. You need to run this as root due to the permissions on that folder.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+<p>Finally, update the system’s shared library cache.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ldconfig
+</code></pre></div></div>
+<p>At this point, GNU Radio should be installed and ready to use. You can quickly test this, with no USRP device attached, by running the following quick tests.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gnuradio-config-info <span class="nt">--version</span>
+gnuradio-config-info <span class="nt">--prefix</span>
+gnuradio-config-info <span class="nt">--enabled-components</span>
+</code></pre></div></div>
+<p>There is a simple flowgraph that you can run that does not require any USRP hardware. It’s called the dialtone test, and it produces a PSTN dial tone on the computer’s speakers. Running it verifies that all the libraries can be found, and that the GNU Radio run-time is working.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nv">$HOME</span>/workarea/gnuradio/gr-audio/examples/python/dial_tone.py
+</code></pre></div></div>
+<p>You can try launching the GNU Radio Companion (GRC) tool, a visual tool for building and running GNU Radio flowgraphs.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gnuradio-companion
+</code></pre></div></div>
+<p>If “gnuradio-companion” does not start and complains about the PYTHONPATH environment variable, then you may have to set this in your $HOME/.bashrc file, as shown below.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PYTHONPATH</span><span class="o">=</span>/usr/local/lib/python2.7/dist-packages
+</code></pre></div></div>
+:ET
