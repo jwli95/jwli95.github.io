@@ -6,11 +6,13 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# Focus on writing good documentation
+# Jiawei Li
 
 {: .fs-9 }
 
 ---
+
+## BIOGRAPHY
 
 ## Education
 
