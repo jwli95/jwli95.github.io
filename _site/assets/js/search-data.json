@@ -119,12 +119,24 @@
     "url": "http://localhost:4000/docs/usrp/matlab/",
     "relUrl": "/docs/usrp/matlab/"
   },"20": {
+    "doc": "RFID",
+    "title": "Utilities",
+    "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",
+    "url": "http://localhost:4000/docs/rfid#utilities",
+    "relUrl": "/docs/rfid#utilities"
+  },"21": {
+    "doc": "RFID",
+    "title": "RFID",
+    "content": " ",
+    "url": "http://localhost:4000/docs/rfid",
+    "relUrl": "/docs/rfid"
+  },"22": {
     "doc": "USRP",
     "title": "Utilities",
     "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",
     "url": "http://localhost:4000/docs/usrp#utilities",
     "relUrl": "/docs/usrp#utilities"
-  },"21": {
+  },"23": {
     "doc": "USRP",
     "title": "USRP",
     "content": " ",
