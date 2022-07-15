@@ -28,7 +28,7 @@ td, th {
 ## Experience
 
 | ------------ | -- | ------------- |
-| **Arizona State University** <br /> Research Assistant, Advisor: Dr. Yanchao Zhang || **Tempe, AZ** <br /> 01/2019- Now |
+| **Arizona State University** <br /> Research Assistant, Advisor: [Dr. Yanchao Zhang](https://web.asu.edu/cnsg/zhang) || **Tempe, AZ** <br /> 01/2019- Now |
 | **Arizona State University** <br /> Teaching Assistant, EEE455: Communication Systems || **Tempe, AZ** <br /> 22Spring |
 | **Arizona State University** <br /> Teaching Assistant, EEE120: Digital Design Fundamentals || **Tempe, AZ** <br /> 19Spring, 19Fall, 21Fall |
 | **Michigan State University** <br /> Research Assistant || **East Lansing, MI** <br /> 08/2017- 11/2018 |
