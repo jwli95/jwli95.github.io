@@ -41,17 +41,17 @@ td, th {
 }
 </style>
 | ------------ | ------------- |
-| **SpecKriging: GNN-based SecureCooperative Spectrum Sensing**<br /> Yan Zhang, Ang Li, Jiawei Li, Dianqi Han, Tao Li, Rui Zhang, Yanchao Zhang<br /> IEEE Transactions on Wireless Communications, 2022 | [Paper](http://example.com/){: .btn } |
-| **WearRF-CLA: Continuous Location Authentication with Wrist Wearables and UHF RFID** <br /> Ang Li, Jiawei Li, Dianqi Han, Yan Zhang, Tao Li, Yanchao Zhang<br />  ACM AsiaCCS, 2022 | [Paper](http://example.com/){: .btn } |
-| **SmartMagnet: Proximity-Based Access Control for IoT Devices with Smartphones and Magnets**<br /> Yan Zhang, Dianqi Han, Ang Li, Jiawei Li, Tao Li, Yanchao Zhang<br /> IEEE Transactions on Mobile Computing, 2022 | [Paper](http://example.com/){: .btn } |
-| **RCID: Fingerprinting Passive RFID Tags via Wideband Backscatter**<br /> Jiawei Li, Ang Li, Dianqi Han, Tao Li, Yan Zhang, Yanchao Zhang<br /> IEEE International Conference on Computer Communications (INFOCOM), 2022 | [Paper](http://example.com/){: .btn } |
-| **DroneKey: A Drone-Aided Group-Key Generation Scheme for Large-Scale IoT Networks**<br /> Dianqi Han, Ang Li, Jiawei Li, Yan Zhang, Tao Li, and Yanchao Zhang<br /> ACM Conference on Computer and Communications Security (CCS), 2021. | [Paper](http://example.com/){: .btn } |
-| **Deep Learning-Guided Jamming for Cross-Technology Wireless Networks: Attack and Defense**<br /> Dianqi Han, Ang Li, Lili Zhang, Yan Zhang, Jiawei Li, Tao Li, Ting Zhu, Yanchao Zhang<br /> IEEE/ACM Transactions on Networking, 2021. | [Paper](http://example.com/){: .btn } |
-| **(In)secure Acoustic Mobile Authentication**<br /> Dianqi Han, Ang Li, Lili Zhang, Yan Zhang, Jiawei Li, Tao Li, Rui Zhang, Yanchao Zhang<br /> IEEE Transactions on Mobile Computing, 2021. | [Paper](http://example.com/){: .btn } |
-| **Your Home is Insecure: Practical Attacks on Wireless Home Alarm Systems**<br /> Tao Li, Dianqi Han, Jiawei Li, Ang Li, Yan Zhang, Rui Zhang, Yanchao Zhang<br /> IEEE International Conference on Computer Communications (INFOCOM), 2021. | [Paper](http://example.com/){: .btn } |
-| **RF-Rhythm: Secure and Usable Two-Factor RFID Authentication**<br /> Jiawei Li, Chuyu Wang, Ang Li, Dianqi Han, Yan Zhang, Jinhang Zuo, Rui Zhang, Lei Xie, Yanchao Zhang<br /> IEEE International Conference on Computer Communications (INFOCOM), 2020. | [Paper](http://example.com/){: .btn } |
-| **The Dark Side of Operational Wi-Fi Calling Services**<br /> Tian Xie, Guan-Hua Tu, Chi-Yu Li, Chunyi Peng, Jiawei Li, and Mi Zhang<br /> IEEE Conference on Communications and Network Security (CNS), 2018. | [Paper](http://example.com/){: .btn } |
-| **Joint Motion Similarity (JMS)-Based Human Action Recognition Using Kinect**<br /> Jiawei Li, Jianxin Chen, and Linhui Sun<br /> IEEE DICTA, 2016. | [Paper](http://example.com/){: .btn } |
+| **SpecKriging: GNN-based SecureCooperative Spectrum Sensing**<br /> Yan Zhang, Ang Li, <u>Jiawei Li</u>, Dianqi Han, Tao Li, Rui Zhang, Yanchao Zhang<br /> IEEE Transactions on Wireless Communications, 2022 | [Paper](../docs/pdf/SpeckYan22.pdf){: .btn } |
+| **WearRF-CLA: Continuous Location Authentication with Wrist Wearables and UHF RFID** <br /> Ang Li, <u>Jiawei Li</u>, Dianqi Han, Yan Zhang, Tao Li, Yanchao Zhang<br />  ACM AsiaCCS, 2022 | [Paper](http://example.com/){: .btn } |
+| **SmartMagnet: Proximity-Based Access Control for IoT Devices with Smartphones and Magnets**<br /> Yan Zhang, Dianqi Han, Ang Li, <u>Jiawei Li</u>, Tao Li, Yanchao Zhang<br /> IEEE Transactions on Mobile Computing, 2022 | [Paper](http://example.com/){: .btn } |
+| **RCID: Fingerprinting Passive RFID Tags via Wideband Backscatter**<br /> <u>Jiawei Li</u>, Ang Li, Dianqi Han, Tao Li, Yan Zhang, Yanchao Zhang<br /> IEEE International Conference on Computer Communications (INFOCOM), 2022 | [Paper](http://example.com/){: .btn } |
+| **DroneKey: A Drone-Aided Group-Key Generation Scheme for Large-Scale IoT Networks**<br /> Dianqi Han, Ang Li, <u>Jiawei Li</u>, Yan Zhang, Tao Li, and Yanchao Zhang<br /> ACM Conference on Computer and Communications Security (CCS), 2021. | [Paper](http://example.com/){: .btn } |
+| **Deep Learning-Guided Jamming for Cross-Technology Wireless Networks: Attack and Defense**<br /> Dianqi Han, Ang Li, Lili Zhang, Yan Zhang, <u>Jiawei Li</u>, Tao Li, Ting Zhu, Yanchao Zhang<br /> IEEE/ACM Transactions on Networking, 2021. | [Paper](http://example.com/){: .btn } |
+| **(In)secure Acoustic Mobile Authentication**<br /> Dianqi Han, Ang Li, Lili Zhang, Yan Zhang, <u>Jiawei Li</u>, Tao Li, Rui Zhang, Yanchao Zhang<br /> IEEE Transactions on Mobile Computing, 2021. | [Paper](http://example.com/){: .btn } |
+| **Your Home is Insecure: Practical Attacks on Wireless Home Alarm Systems**<br /> Tao Li, Dianqi Han, <u>Jiawei Li</u>, Ang Li, Yan Zhang, Rui Zhang, Yanchao Zhang<br /> IEEE International Conference on Computer Communications (INFOCOM), 2021. | [Paper](http://example.com/){: .btn } |
+| **RF-Rhythm: Secure and Usable Two-Factor RFID Authentication**<br /> <u>Jiawei Li</u>, Chuyu Wang, Ang Li, Dianqi Han, Yan Zhang, Jinhang Zuo, Rui Zhang, Lei Xie, Yanchao Zhang<br /> IEEE International Conference on Computer Communications (INFOCOM), 2020. | [Paper](http://example.com/){: .btn } |
+| **The Dark Side of Operational Wi-Fi Calling Services**<br /> Tian Xie, Guan-Hua Tu, Chi-Yu Li, Chunyi Peng, <u>Jiawei Li</u>, and Mi Zhang<br /> IEEE Conference on Communications and Network Security (CNS), 2018. | [Paper](http://example.com/){: .btn } |
+| **Joint Motion Similarity (JMS)-Based Human Action Recognition Using Kinect**<br /> <u>Jiawei Li</u>, Jianxin Chen, and Linhui Sun<br /> IEEE DICTA, 2016. | [Paper](http://example.com/){: .btn } |
 
 ## Professional Services
 
