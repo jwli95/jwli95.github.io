@@ -47,96 +47,78 @@
     "url": "http://localhost:4000/docs/usrp/gnuradio_uhd_linux_toolchain/",
     "relUrl": "/docs/usrp/gnuradio_uhd_linux_toolchain/"
   },"8": {
-    "doc": "Markdown kitchen sink",
-    "title": "Header 1",
-    "content": "This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. ",
-    "url": "http://localhost:4000/docs/index-test/#header-1",
-    "relUrl": "/docs/index-test/#header-1"
-  },"9": {
-    "doc": "Markdown kitchen sink",
-    "title": "Header 2",
-    "content": "This is a blockquote following a header. When something is important enough, you do it even if the odds are not in your favor. Header 3 . // Javascript code with syntax highlighting. var fun = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } . # Ruby code with syntax highlighting GitHubPages::Dependencies.gems.each do |gem, version| s.add_dependency(gem, \"= #{version}\") end . Header 4 with code not transformed . | This is an unordered list following a header. | This is an unordered list following a header. | This is an unordered list following a header. | . Header 5 . | This is an ordered list following a header. | This is an ordered list following a header. | This is an ordered list following a header. | . Header 6 . | head1 | head two | three | . | ok | good swedish fish | nice | . | out of stock | good and plenty | nice | . | ok | good oreos | hmm | . | ok | good zoute drop | yumm | . There’s a horizontal rule below this. Here is an unordered list: . | Item foo | Item bar | Item baz | Item zip | . And an ordered list: . | Item one | Item two | Item three | Item four | . And an ordered list, continued: . | Item one | Item two | . Some text . | Item three | Item four | . And an ordered list starting from 42: . | Item 42 | Item 43 | Item 44 | . And a nested list: . | level 1 item . | level 2 item | level 2 item . | level 3 item | level 3 item | . | . | level 1 item . | level 2 item | level 2 item | level 2 item | . | level 1 item . | level 2 item | level 2 item | . | level 1 item | . Nesting an ol in ul in an ol . | level 1 item (ul) . | level 2 item (ol) | level 2 item (ol) . | level 3 item (ul) | level 3 item (ul) | . | . | level 1 item (ul) . | level 2 item (ol) | level 2 item (ol) . | level 3 item (ul) | level 3 item (ul) | . | level 4 item (ol) | level 4 item (ol) . | level 3 item (ul) | level 3 item (ul) | . | . | level 1 item (ul) | . And a task list . | Hello, this is a TODO item | Hello, this is another TODO item | Goodbye, this item is done | . Small image . Large image . Large image . “Wroclaw University Library digitizing rare archival texts” by j_cadmus is marked with CC BY 2.0. Definition lists can be used with HTML syntax. Name Godzilla Born 1952 Birthplace Japan Color Green Multiple description terms and values . Term Brief description of Term Longer Term Longer description of Term, possibly more than one line Term First description of Term, possibly more than one line Second description of Term, possibly more than one line . Term1 Term2 Single description of Term1 and Term2, possibly more than one line Term1 Term2 First description of Term1 and Term2, possibly more than one line Second description of Term1 and Term2, possibly more than one line . More code . Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this. The final element. ",
-    "url": "http://localhost:4000/docs/index-test/#header-2",
-    "relUrl": "/docs/index-test/#header-2"
-  },"10": {
-    "doc": "Markdown kitchen sink",
-    "title": "Markdown kitchen sink",
-    "content": "Text can be bold, italic, or strikethrough. Link to another page. There should be whitespace between paragraphs. There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project. ",
-    "url": "http://localhost:4000/docs/index-test/",
-    "relUrl": "/docs/index-test/"
-  },"11": {
     "doc": "Home",
     "title": "Jiawei Li",
     "content": ". ",
     "url": "http://localhost:4000/#jiawei-li",
     "relUrl": "/#jiawei-li"
-  },"12": {
+  },"9": {
     "doc": "Home",
     "title": "BIOGRAPHY",
     "content": " ",
     "url": "http://localhost:4000/#biography",
     "relUrl": "/#biography"
-  },"13": {
+  },"10": {
     "doc": "Home",
     "title": "Education",
     "content": "| Arizona State University Ph.D. in Computer Engineering | Tempe, AZ 01/2019- Now | . | Nanjing University of Posts and Telecommunications B.E. in Telecommunication Engineering | Nanjing, China 09/2013-07/2017 | . ",
     "url": "http://localhost:4000/#education",
     "relUrl": "/#education"
-  },"14": {
+  },"11": {
     "doc": "Home",
     "title": "Experience",
     "content": "| Arizona State University Research Assistant, Advisor: Dr. Yanchao Zhang |   | Tempe, AZ 01/2019- Now | . | Arizona State University Teaching Assistant, EEE455: Communication Systems |   | Tempe, AZ 22Spring | . | Arizona State University Teaching Assistant, EEE120: Digital Design Fundamentals |   | Tempe, AZ 19Spring, 19Fall, 21Fall | . | Michigan State University Research Assistant |   | East Lansing, MI 08/2017- 11/2018 | . ",
     "url": "http://localhost:4000/#experience",
     "relUrl": "/#experience"
-  },"15": {
+  },"12": {
     "doc": "Home",
     "title": "Publications",
     "content": "| SpecKriging: GNN-based SecureCooperative Spectrum Sensing Yan Zhang, Ang Li, Jiawei Li, Dianqi Han, Tao Li, Rui Zhang, Yanchao Zhang IEEE Transactions on Wireless Communications, 2022 | TWC | . | WearRF-CLA: Continuous Location Authentication with Wrist Wearables and UHF RFID Ang Li, Jiawei Li, Dianqi Han, Yan Zhang, Tao Li, Yanchao Zhang ACM AsiaCCS, 2022 | AsiaCCS | . | SmartMagnet: Proximity-Based Access Control for IoT Devices with Smartphones and Magnets Yan Zhang, Dianqi Han, Ang Li, Jiawei Li, Tao Li, Yanchao Zhang IEEE Transactions on Mobile Computing, 2022 | TMC | . | RCID: Fingerprinting Passive RFID Tags via Wideband Backscatter Jiawei Li, Ang Li, Dianqi Han, Tao Li, Yan Zhang, Yanchao Zhang IEEE International Conference on Computer Communications (INFOCOM), 2022 | INFOCOM | . | DroneKey: A Drone-Aided Group-Key Generation Scheme for Large-Scale IoT Networks Dianqi Han, Ang Li, Jiawei Li, Yan Zhang, Tao Li, and Yanchao Zhang ACM Conference on Computer and Communications Security (CCS), 2021. | CCS | . | Deep Learning-Guided Jamming for Cross-Technology Wireless Networks: Attack and Defense Dianqi Han, Ang Li, Lili Zhang, Yan Zhang, Jiawei Li, Tao Li, Ting Zhu, Yanchao Zhang IEEE/ACM Transactions on Networking, 2021. | TON | . | (In)secure Acoustic Mobile Authentication Dianqi Han, Ang Li, Lili Zhang, Yan Zhang, Jiawei Li, Tao Li, Rui Zhang, Yanchao Zhang IEEE Transactions on Mobile Computing, 2021. | TMC | . | Your Home is Insecure: Practical Attacks on Wireless Home Alarm Systems Tao Li, Dianqi Han, Jiawei Li, Ang Li, Yan Zhang, Rui Zhang, Yanchao Zhang IEEE International Conference on Computer Communications (INFOCOM), 2021. | INFOCOM | . | RF-Rhythm: Secure and Usable Two-Factor RFID Authentication Jiawei Li, Chuyu Wang, Ang Li, Dianqi Han, Yan Zhang, Jinhang Zuo, Rui Zhang, Lei Xie, Yanchao Zhang IEEE International Conference on Computer Communications (INFOCOM), 2020. | INFOCOM | . | The Dark Side of Operational Wi-Fi Calling Services Tian Xie, Guan-Hua Tu, Chi-Yu Li, Chunyi Peng, Jiawei Li, and Mi Zhang IEEE Conference on Communications and Network Security (CNS), 2018. | CNS | . | Joint Motion Similarity (JMS)-Based Human Action Recognition Using Kinect Jiawei Li, Jianxin Chen, and Linhui Sun IEEE DICTA, 2016. | DICTA | . ",
     "url": "http://localhost:4000/#publications",
     "relUrl": "/#publications"
-  },"16": {
+  },"13": {
     "doc": "Home",
     "title": "Professional Services",
     "content": ". | Journal Reviewer for: . | IEEE/ACM Transactions on Networking | ACM Transactions on Sensor Networks | Journal of Network and Systems Management | . | Conference Reviewer for: . | IEEE ICDCS 2020, 2022 | ACM Mobihoc 2020, 2022 | IEEE WiSec 2020 | IEEE VNC 2018 | IEEE BigData 2018 | IEEE VTC 2017 | . | Student Volunteer: IEEE INFOCOM, May 2–5, 2022 | Seminar: 03/2020, ”RF-Rhythm: Secure and Usable Two-Factor RFID Authentication”, Cybersecurity and Forensics Science Seminar, Arizona State University | Student member of IEEE | . ",
     "url": "http://localhost:4000/#professional-services",
     "relUrl": "/#professional-services"
-  },"17": {
+  },"14": {
     "doc": "Home",
     "title": "Awards",
     "content": ". | 05/2022: IEEE INFOCOM Student Travel Grant | 06/2020: IEEE INFOCOM Student Travel Grant | 08/2019: University Graduate Fellowship | 01/2019: University Graduate Fellowship | 06/2017: Outstanding Dissertation Award | 06/2017: Outstanding Graduates Award | 12/2015: 2nd Prize of National College Competition on Internet of Things (East of China) | 11/2015: 3rd Prize of ”Challenge Cup” National Undergraduate Curricular Academic Science and Technology Works | 2015/2016: 2nd Prize of College Scholarship (GPA TOP 5%) | 2014/2015: 2nd Prize of College Scholarship (GPA TOP 5%) | 2013/2014: 1st Prize of College Scholarship (GPA TOP 1%), Narada Scholarship (GPA RANK 2), 1st Prize of | Sunwave Communication Scholarship (GPA RANK 2) | . ",
     "url": "http://localhost:4000/#awards",
     "relUrl": "/#awards"
-  },"18": {
+  },"15": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  },"19": {
+  },"16": {
     "doc": "Matlab Import Raw IQ Data",
     "title": "Matlab Import Raw IQ Data",
     "content": "f = fopen('csi20.dat', 'rb'); v = fread(f, 'float'); fclose(f); n = length(v); di = v(1:2:(n - 1)); dq = v(2:2:n); s_in = di + 1i * dq; . ",
     "url": "http://localhost:4000/docs/usrp/matlab/",
     "relUrl": "/docs/usrp/matlab/"
-  },"20": {
+  },"17": {
     "doc": "RFID",
     "title": "Utilities",
     "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",
     "url": "http://localhost:4000/docs/rfid#utilities",
     "relUrl": "/docs/rfid#utilities"
-  },"21": {
+  },"18": {
     "doc": "RFID",
     "title": "RFID",
     "content": " ",
     "url": "http://localhost:4000/docs/rfid",
     "relUrl": "/docs/rfid"
-  },"22": {
+  },"19": {
     "doc": "USRP",
     "title": "Utilities",
     "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",
     "url": "http://localhost:4000/docs/usrp#utilities",
     "relUrl": "/docs/usrp#utilities"
-  },"23": {
+  },"20": {
     "doc": "USRP",
     "title": "USRP",
     "content": " ",
