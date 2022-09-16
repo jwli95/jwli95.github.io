@@ -41,6 +41,8 @@ td, th {
 }
 </style>
 | ------------ | ------------- |
+
+| **Rhythmic RFID Authentication**<br /> <u>Jiawei Li</u>, Chuyu Wang, Ang Li, Dianqi Han, Yan Zhang, Jinhang Zuo, Rui Zhang, Lei Xie, Yanchao Zhang<br /> IEEE/ACM Transactions on Networking, 2022 | [TWC](../docs/pdf/RhythLi22.pdf){: .btn .text-blue-300} |
 | **SpecKriging: GNN-based SecureCooperative Spectrum Sensing**<br /> Yan Zhang, Ang Li, <u>Jiawei Li</u>, Dianqi Han, Tao Li, Rui Zhang, Yanchao Zhang<br /> IEEE Transactions on Wireless Communications, 2022 | [TWC](../docs/pdf/SpeckZhang22.pdf){: .btn .text-green-300} |
 | **WearRF-CLA: Continuous Location Authentication with Wrist Wearables and UHF RFID** <br /> Ang Li, <u>Jiawei Li</u>, Dianqi Han, Yan Zhang, Tao Li, Yanchao Zhang<br />  ACM AsiaCCS, 2022 | [AsiaCCS](../docs/pdf/WearrLi22.pdf){: .btn } |
 | **SmartMagnet: Proximity-Based Access Control for IoT Devices with Smartphones and Magnets**<br /> Yan Zhang, Dianqi Han, Ang Li, <u>Jiawei Li</u>, Tao Li, Yanchao Zhang<br /> IEEE Transactions on Mobile Computing, 2022 | [TMC](../docs/pdf/SmartZhang22.pdf){: .btn .text-red-300} |
